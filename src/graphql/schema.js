@@ -14,10 +14,10 @@ const PersonType = new GraphQLObjectType({
   },
 });
 
-const peopleData = [
-  { id: 1, name: 'John Smith' },
-  { id: 2, name: 'Sara Smith' },
-  { id: 3, name: 'Budd Deey' },
+export const peopleData = [
+  { id: 1, name: 'John Smith', __typename: 'Person' },
+  { id: 2, name: 'Sara Smith', __typename: 'Person' },
+  { id: 3, name: 'Budd Deey', __typename: 'Person' },
 ];
 
 const QueryType = new GraphQLObjectType({

@@ -2,14 +2,14 @@ import React from "react";
 import { render } from "react-dom";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 
-import { link } from "./graphql/link";
+import { resolvers } from "./graphql/resolvers";
 import App from "./App";
 
 import "./index.css";
 
 const client = new ApolloClient({
   cache: new InMemoryCache(),
-  link
+  resolvers: resolvers
 });
 
 render(
